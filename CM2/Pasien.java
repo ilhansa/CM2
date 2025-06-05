@@ -6,7 +6,7 @@ public class Pasien {
     Pasien(String nama, String nik, String keluhan) {
         this.nama = nama;
         this.nik = nik;
-        this.keluhan = keluhan;
+        this.keluhan = keluhan; 
     }
 
     void TampilInformasi() {
