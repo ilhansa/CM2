@@ -1,3 +1,4 @@
+package CM2;
 public class Pasien {
     String nama;
     String nik;
