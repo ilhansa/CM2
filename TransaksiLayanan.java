@@ -1,4 +1,3 @@
-package CM2;
 public class TransaksiLayanan {
     Pasien pasien;
     Dokter dokter;
@@ -10,6 +9,7 @@ public class TransaksiLayanan {
     }
 
     public int hitungBiaya() {
-        return 0;
+        
     }
+
 }
