@@ -61,5 +61,13 @@ public class DoubleLinkListPasien {
         return head.pasien;
     }
 
-    
+    public void lihatAntrian() {
+        int count = 0;
+        NodeP current = head;
+        while (current != null) {
+            System.out.println((count + 1) + ". " + current.pasien.nama);
+            current = current.next;
+            count++;
+        }
+    }
 }

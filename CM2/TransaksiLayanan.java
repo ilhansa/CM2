@@ -2,15 +2,22 @@ package CM2;
 public class TransaksiLayanan {
     Pasien pasien;
     Dokter dokter;
-    int durasiLayanan;
+    int durasi;
     int biaya;
 
-    public TransaksiLayanan(Pasien pasien, Dokter dokter, int biaya ) {
-
+    public TransaksiLayanan(Pasien pasien, Dokter dokter, int durasi) {
+        this.pasien = pasien;
+        this.dokter = dokter;
+        this.durasi = durasi;
+        int harga = 50000; // harga perjam 
+        biaya = durasi * harga;
     }
 
-    public int hitungBiaya() {
-        return 0;
+    void tampil() {
+        System.out.println("Nama pasien: " + pasien.nama);
+        System.out.println("Nama dokter: " + dokter.nama);
+        System.out.println("Durasi: " + durasi);
+        System.out.println("Biaya: " + biaya);
     }
 
     public Pasien getPasien() {
@@ -22,11 +29,10 @@ public class TransaksiLayanan {
     }
 
     public int getDurasiLayanan() {
-        return durasiLayanan;
+        return durasi;
     }
 
     public double getBiaya() {
         return biaya;
     }
-
 }

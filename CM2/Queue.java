@@ -1,0 +1,58 @@
+package CM2;
+
+public class Queue { // array
+    TransaksiLayanan[] data;
+    int front;
+    int rear;
+    int size;
+    int max;
+
+    Queue(int n) {
+        max = n;
+        data = new TransaksiLayanan[max];
+        front = 0;
+        rear = 0;
+        size = 0;
+    }
+
+    boolean isFull() {
+        return size == max;
+    }
+
+    boolean isEmpty() {
+        return size == 0;
+    }
+
+    void enqueue(TransaksiLayanan transaksi) {
+        if (isFull()) {
+            // kalau full, head geser (yg lama dibuang)
+            front = (front + 1) % max;
+            size--;
+        }
+        data[rear] = transaksi;
+        rear = (rear + 1) % max;
+        size++;
+    }
+
+    TransaksiLayanan dequeue() {
+        if (isEmpty()) {
+            return null;
+        }
+        TransaksiLayanan depan = data[front];
+        front = (front + 1) % max;
+        size--;
+        return depan;
+    }
+
+    void printSemua() {
+        int count = size;
+        int i = front;
+        System.out.println("Riwayat transaksi");
+        while(0 < count) {
+            System.out.println((i + 1) + ". ");
+            data[i].tampil();
+            i = (i + 1) % max;
+            count--;
+        }
+    }
+}
