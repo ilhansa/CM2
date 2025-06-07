@@ -12,4 +12,21 @@ public class TransaksiLayanan {
     public int hitungBiaya() {
         return 0;
     }
+
+    public Pasien getPasien() {
+        return pasien;
+    }
+
+    public Dokter getDokter() {
+        return dokter;
+    }
+
+    public int getDurasiLayanan() {
+        return durasiLayanan;
+    }
+
+    public double getBiaya() {
+        return biaya;
+    }
+
 }

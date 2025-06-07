@@ -10,6 +10,18 @@ public class Pasien {
         this.keluhan = keluhan; 
     }
 
+    public String getNama() {
+        return nama;
+    }
+
+    public String getNik() {
+        return nik;
+    }
+
+    public String getKeluhan() {
+        return keluhan;
+    }
+
     void TampilInformasi() {
         System.out.println("Nama: " + nama);
         System.out.println("Nik: " + nik);
