@@ -33,7 +33,7 @@ public class DDLMain {
                     antrian.tambahPasien(pasien);
                     System.out.println("Pasien berhasil ditambahkan");
                 }
-                case 2 -> {}
+                case 2 -> antrian.lihatAntrian();
                 case 3 -> {
                     if (antrian.IsEmpty()) {
                         System.out.println("Antrian masih kosong");
