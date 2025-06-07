@@ -39,7 +39,7 @@ public class DDLMain {
                         System.out.println("Antrian masih kosong");
                         break;
                     }
-                    Pasien pasien = antrian.layaniPasien(); // mengambil pasien di antrian terdepan
+                    Pasien pasien = antrian.layaniPasien(); 
                     System.out.println("Pasien " + pasien.nama + " dipanggil");
                     System.out.print("Masukkan id dokter: ");
                     String id = scanner.nextLine();
