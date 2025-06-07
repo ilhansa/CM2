@@ -52,8 +52,7 @@ public class DDLMain {
                     riwayatTx.enqueue(tx);
                 }
                 case 4 -> {
-                    int sisaAntrian = antrian.getSize();
-                    System.out.println("Sisa pasien dalam antrian: " + sisaAntrian);
+                    System.out.println("Sisa pasien dalam antrian: " + antrian.getSize());
                 }
                 case 5 -> {
                     riwayatTx.printSemua();
