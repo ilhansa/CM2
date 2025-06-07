@@ -9,7 +9,7 @@ public class TransaksiLayanan {
         this.pasien = pasien;
         this.dokter = dokter;
         this.durasi = durasi;
-        int harga = 50000; // harga perjam 
+        int harga = 50000;
         biaya = durasi * harga;
     }
 

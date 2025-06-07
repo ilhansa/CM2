@@ -1,6 +1,6 @@
 package CM2;
 
-public class Queue { // array
+public class Queue {
     TransaksiLayanan[] data;
     int front;
     int rear;
@@ -25,7 +25,7 @@ public class Queue { // array
 
     void enqueue(TransaksiLayanan transaksi) {
         if (isFull()) {
-            // kalau full, head geser (yg lama dibuang)
+            
             front = (front + 1) % max;
             size--;
         }
