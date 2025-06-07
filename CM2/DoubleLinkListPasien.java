@@ -64,8 +64,11 @@ public class DoubleLinkListPasien {
     public void lihatAntrian() {
         int count = 0;
         NodeP current = head;
+        System.out.println("-- Antrian Pasien --");
         while (current != null) {
-            System.out.println((count + 1) + ". " + current.pasien.nama);
+            System.out.println("Nama pasien : " + current.pasien.nama);
+            System.out.println("NIK         : " + current.pasien.nik);
+            System.out.println("Keluhan     : " + current.pasien.keluhan);
             current = current.next;
             count++;
         }

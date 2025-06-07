@@ -14,12 +14,9 @@ public class TransaksiLayanan {
     }
 
     void tampil() {
-        System.out.println("Nama pasien: " + pasien.nama);
-        System.out.println("Nama dokter: " + dokter.nama);
-        System.out.println("Durasi: " + durasi);
-        System.out.println("Biaya: " + biaya);
+        System.out.println(pasien.nama + " (" + durasi + " jam): Rp " + biaya);
     }
-
+    
     public Pasien getPasien() {
         return pasien;
     }

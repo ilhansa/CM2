@@ -37,9 +37,10 @@ public class Queue { // array
     void printSemua() {
         int count = size;
         int i = front;
-        System.out.println("Riwayat transaksi");
+        System.out.println("-- Riwayat Transaksi --");
+        System.out.println("Daftar Transaksi: ");
         while(0 < count) {
-            System.out.println((i + 1) + ". ");
+            System.out.print((i + 1) + ". ");
             data[i].tampil();
             i = (i + 1) % max;
             count--;
