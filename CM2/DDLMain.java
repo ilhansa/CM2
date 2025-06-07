@@ -59,27 +59,6 @@ public class DDLMain {
                 }
             }
         } while(pilih != 0);
-
-        
-        // System.out.println("=== MASUKKAN DATA PASIEN ===");
-        // System.out.print("Nama Pasien: ");
-        // String nama = scanner.nextLine();
-
-        // System.out.print("NIK Pasien: ");
-        // String nik = scanner.nextLine();
-        // System.out.println("keluhan Pasien : ");
-        // String keluhan = scanner.nextLine();
-        
-
-        // // Membuat objek Pasien menggunakan input
-        // Pasien pasienBaru = new Pasien(nama, nik, keluhan);
-        
-        // // Contoh penggunaan objek pasien yang baru dibuat
-        // System.out.println("\nInformasi Pasien Baru:");
-        // System.out.println(pasienBaru.tampilkanInformasi());
-
-        // INI MASIH BINGUNG, NIATNYA DATA DI INPUT DARI USER GA DI TULIS MANUAL DI PARAMETER
-        // udah
         scanner.close();
     }
 }

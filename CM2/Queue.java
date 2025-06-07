@@ -34,16 +34,6 @@ public class Queue { // array
         size++;
     }
 
-    TransaksiLayanan dequeue() {
-        if (isEmpty()) {
-            return null;
-        }
-        TransaksiLayanan depan = data[front];
-        front = (front + 1) % max;
-        size--;
-        return depan;
-    }
-
     void printSemua() {
         int count = size;
         int i = front;
