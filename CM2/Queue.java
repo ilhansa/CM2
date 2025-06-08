@@ -35,15 +35,15 @@ public class Queue {
     }
 
     void printSemua() {
-        int count = size;
+        int count = 0;
         int i = front;
         System.out.println("-- Riwayat Transaksi --");
         System.out.println("Daftar Transaksi: ");
-        while(0 < count) {
-            System.out.print((i + 1) + ". ");
+        while(count < size) {
+            System.out.print((count + 1) + ". ");
             data[i].tampil();
             i = (i + 1) % max;
-            count--;
+            count++;
         }
     }
 }
