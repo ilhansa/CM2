@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class DDLMain {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Queue riwayatTx = new Queue(2);
+        Queue riwayatTx = new Queue(10);
         DoubleLinkListPasien antrian = new DoubleLinkListPasien();
 
         int pilih;

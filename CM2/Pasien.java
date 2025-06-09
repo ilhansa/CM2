@@ -23,8 +23,8 @@ public class Pasien {
     }
 
     void TampilInformasi() {
-        System.out.println("Nama: " + nama);
-        System.out.println("Nik: " + nik);
-        System.out.println("Keluhan: " + keluhan);
+        System.out.println("Nama    : " + nama);
+        System.out.println("Nik     : " + nik);
+        System.out.println("Keluhan : " + keluhan);
     }
 }
