@@ -54,13 +54,6 @@ public class DoubleLinkListPasien {
         return count;
     }
 
-    public Pasien peek() { 
-        if (IsEmpty()) {
-            return null;
-        }
-        return head.pasien;
-    }
-
     public void lihatAntrian() {
         int count = 0;
         NodeP current = head;
